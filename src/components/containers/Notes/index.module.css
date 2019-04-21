@@ -1,0 +1,42 @@
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  min-height: 100vh;
+  margin: 32px;
+}
+
+.App>*:last-child button {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1.3em;
+  width: 240px;
+  text-align: center;
+  padding: 8px 0;
+  background-color: rgba(223, 227, 230, .24);
+  transition: background-color .2s;
+}
+
+.App>*:last-child button:hover {
+  background-color: rgba(0, 0, 0, .12);
+}
+
+.App>*:last-child input {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  transition: border .2s;
+  padding: 6px 12px;
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.App>*:last-child input:focus {
+  border-color: var(--primary-blue);
+}

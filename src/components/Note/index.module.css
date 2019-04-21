@@ -1,0 +1,258 @@
+.App {
+  border-radius: 3px;
+  background-color: #ccc;
+  margin: 12px 12px 36px;
+  padding: 8px 10px;
+}
+
+/* Header Notes */
+
+.AppHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.AppHeader button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 12px 16px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.AppHeader textarea {
+  line-height: 1.4;
+  resize: none;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 3px;
+  border-color: transparent;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: default;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  font-family: 'PT Sans', sans-serif;
+  transition: border-color .2s, background-color .2s;
+}
+
+.AppHeader textarea:focus {
+  border-color: blue;
+  background-color: #fff;
+}
+
+/* Each tags of Notes */
+
+.AppTags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.2em;
+}
+
+.AppTags li {
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 0 12px;
+  cursor: pointer;
+  margin: 6px 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.AppTags li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.AppTags div {
+  padding: 8px 0;
+}
+
+.AppTags span {
+  margin: 4px;
+  margin-right: 8px;
+}
+
+/* Modify Options */
+
+.AppTagsModify {
+  position: relative;
+}
+
+.AppTagsModify div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 1.1em;
+  background-color: var(--secondary-blue);
+  border-radius: 3px;
+}
+
+.AppTagsModify div a {
+  text-decoration: none;
+  color: #000;
+  transition: background-color .2s, color .2s;
+  width: 100%;
+  padding: 6px 24px;
+  text-align: center;
+}
+
+.AppTagsModify div a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.AppTagsModify button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Slabo 27px', serif;
+  font-size: .7em;
+}
+
+.AppTagsModify>button {
+  background-color: transparent;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-align: center;
+}
+
+.AppTagsModify>div>button {
+  padding: 8px;
+  margin: 4px 0;
+  text-align: center;
+  font-size: 1em;
+  background-color: transparent;
+  transition: background-color .2s;
+}
+
+.AppTagsModify>div>button:hover {
+  background-color: var(--primary-blue);
+}
+
+.AppTagsModify form {
+  padding: 8px 16px;
+}
+
+.AppTagsModify form input {
+  font-size: .87em;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+}
+
+.AppTagsModify form div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.AppTagsModify form div button {
+  padding: 8px 24px;
+  margin-right: 6px;
+  border-radius: 3px;
+  transition: background-color .2s;
+}
+
+/* Apply button */
+
+.AppTagsModify form div button:first-child {
+  background-color: var(--secondary-green);
+}
+
+.AppTagsModify form div button:first-child:hover {
+  background-color: var(--primary-green);
+}
+
+/* Cancel button */
+
+.AppTagsModify form div button:last-child {
+  background-color: var(--secondary-red);
+}
+
+.AppTagsModify form div button:last-child:hover {
+  background-color: var(--primary-red);
+}
+
+/* Footer of Notes */
+
+.AppFooter {
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 0;
+  background-color: var(--secondary-blue);
+  border: 2px solid var(--primary-blue);
+  border-radius: 3px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.1em;
+  transition: background-color .2s, color .2s;
+}
+
+.AppFooter:hover {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+
+.AppFooter input {
+  margin: 0 auto;
+  padding: 6px 8px;
+  font-size: .9em;
+  outline: none;
+  width: 90%;
+  border-radius: 3px;
+  border: none;
+}
+
+.AppFooter div {
+  margin-right: 11px;
+}
+
+.AppFooter div button {
+  font-size: .8em;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  margin: 4px;
+  transition: background-color .2s;
+}
+
+/* Apply button */
+
+.AppFooter div button:first-child {
+  background-color: var(--secondary-green);
+}
+
+.AppFooter div button:first-child:hover {
+  background-color: var(--primary-green);
+}
+
+/* Cancel button */
+
+.AppFooter div button:last-child {
+  background-color: var(--secondary-red);
+}
+
+.AppFooter div button:last-child:hover {
+  background-color: var(--primary-red);
+}

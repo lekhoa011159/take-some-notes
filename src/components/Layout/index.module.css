@@ -1,0 +1,13 @@
+.Footer {
+  background-color: yellow;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.NotFound {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  color: #00f;
+}

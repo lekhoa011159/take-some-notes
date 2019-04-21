@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+:root {
+  --primary-green: #2a9e2e;
+  --secondary-green: #6bd372;
+  --primary-red: #d83c3c;
+  --secondary-red: #e07272;
+  --primary-blue: #6b81a3;
+  --secondary-blue: #b7cff4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./assets/background.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+textarea.inactive {
+  cursor: pointer;
+  background-color: #ccc;
+}
